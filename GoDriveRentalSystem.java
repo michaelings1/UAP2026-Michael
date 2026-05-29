@@ -52,7 +52,7 @@ public class GoDriveRentalSystem {
         } else if (target instanceof Motor motor) {
             double asuransi = motor.getTambahanAsuransi(lamaSewa);
             if (asuransi > 0)
-                System.out.printf("%-20s: Rp %,.0f%n", "Asuransi Matik", asuransi);
+                System.out.printf("%-20s: Rp %,.0f%n", "Asuransi Matic", asuransi);
         }
 
         double diskon = 0;
