@@ -8,8 +8,8 @@ public class Main {
         sistem.tambahKendaraan(new Mobil("MBL01", "Toyota Avanza", 350000, 7));
         sistem.tambahKendaraan(new Mobil("MBL02", "Daihatsu Sigra", 300000, 7));
         sistem.tambahKendaraan(new Mobil("MBL03", "Honda Brio", 280000, 5));
-        sistem.tambahKendaraan(new Motor("MTR01", "Honda Vario", 80000, "Matik"));
-        sistem.tambahKendaraan(new Motor("MTR02", "Yamaha NMAX", 100000, "Matik"));
+        sistem.tambahKendaraan(new Motor("MTR01", "Honda Vario", 80000, "Matic"));
+        sistem.tambahKendaraan(new Motor("MTR02", "Yamaha NMAX", 100000, "Matic"));
         sistem.tambahKendaraan(new Motor("MTR03", "Kawasaki KLX", 90000, "Manual"));
 
         int pilihan;
@@ -93,7 +93,7 @@ public class Main {
             }
 
         } else if (jenis.equals("motor")) {
-            System.out.print("Masukkan jenis transmisi (Matik/Manual): ");
+            System.out.print("Masukkan jenis transmisi (Matic/Manual): ");
             String transmisi = scanner.nextLine().trim();
 
             sistem.tambahKendaraan(new Motor(kode, nama, harga, transmisi));
