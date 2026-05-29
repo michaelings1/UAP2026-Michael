@@ -24,7 +24,7 @@ public class Motor extends Kendaraan {
     @Override
     public double hitungBiayaDasar(int lamaSewa) {
         double biayaDasar = lamaSewa * getHargaSewaPerHari();
-        double tambahan = jenisTransmisi.equalsIgnoreCase("Matik") ? 10000 * lamaSewa : 0;
+        double tambahan = jenisTransmisi.equalsIgnoreCase("Matic") ? 10000 * lamaSewa : 0;
         return biayaDasar + tambahan;
     }
 
